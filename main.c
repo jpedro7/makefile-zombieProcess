@@ -10,7 +10,8 @@ int main()
 
     if (pid > 0) {
         printf("PID PAI: %d\n", getpid());
-        sleep(60);
+        sleep(25);
+        execlp("/bin/ps", "ps", "-l", NULL);
     }
 
     else {
